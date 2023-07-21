@@ -1,0 +1,179 @@
+/*=== Aplicando CSS Global===*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*=== Aplicando CSS al encabezado===*/
+#logo{
+    width: 40%;
+    margin: auto;
+    padding-top: 10px;
+}
+#menu{
+    text-align: center;
+}
+
+
+#encabezado {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        background-color: #1F3F92;
+}
+#menu{
+    display: flex;
+    
+    justify-content: end;
+    align-items: end;
+}
+#nav {
+    display: flex;
+    width: 90%;
+    margin-top: 4.5rem;
+    margin-right: 2rem;
+}
+#opciones {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#opciones li a{
+    color: black;
+}
+
+/* ==== aplicando css al banner ===== */
+#banner img {
+    height: 78vh;
+}
+
+/* ==== aplicando css a PropuestaEdu==== */
+#propuestaEdu {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    top: -60px;
+    z-index: 20;
+}
+.tituloPropuestaEdu {
+    text-align: center;
+    
+    padding: 20px 10px;
+}
+.parrafoPropuestaEdu {
+    text-align: center;
+    
+}
+.secPropuestaEdu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    background-color:rgb(0, 152, 157);
+}
+
+/* ==== aplicando css a quienes somos ==== */
+#imgQuienesSomos img{
+    filter: blur(2px);
+}
+#fraseBanner {
+    position: relative;
+    bottom: 500px;
+    background-color: #1f4092c8;
+    text-align: center;
+}
+#parrafoQuienesSomos {
+    position: relative;
+    bottom: 400px;
+    background-color: #1f4092c8;
+    text-align: center;
+}
+
+/* ==== aplicando css a ultimas noticias ==== */
+#todoUltimasNoticias {
+    background-color: #DEDEE6;
+}
+#ultimasNoticias {
+    display: flex;
+    width: 70vw;
+    margin: auto;
+}
+.sectionUltimasNoticias {
+    margin: 15px;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.tituloUltimasNoticias a {
+    color: #1F3F92;
+    font-size: large;
+}
+#tituloUltNot {
+    color: #1F3F92;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* ==== aplicando css a ultimas noticias ==== */
+footer {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: auto;
+    background-color: #1F3F92;
+}
+footer div {
+    margin: 10px;
+}
+/* == redes footer == */
+#redesFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+/* == medio footer == */
+#medioFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    width: 70%;
+}
+/* === contactos footer === */
+#colorFooter{
+    background-color: #1F3F92;
+}
+#contactosFooter  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#contactosFooter {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+#contactosFooter  ul li{
+    margin: 5px;
+}
+#contactosFooter  ul li a {
+    color: white;
+}
