@@ -1,0 +1,236 @@
+/*=== Aplicando CSS Global===*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*=== Aplicando CSS al encabezado===*/
+#logo{
+    width: 35%;
+    margin: auto;
+}
+#menu{
+    text-align: center;
+}
+#encabezado {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        background-color: #1F3F92;
+}
+#menu{
+    display: flex;
+    
+    justify-content: end;
+    align-items: end;
+}
+#nav {
+    display: flex;
+    width: 90%;
+    margin-top: 4rem;
+    margin-right: 2rem;
+}
+#opciones {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+ul#opciones li a{
+    font-size: 1.3rem;
+    color: black;
+    position: relative;
+}
+ul#opciones li a::before{
+    content: '';
+    width: 0%;
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    position: absolute;
+    bottom: -5px;
+    transition: all 0.9s;
+}
+ul#opciones li a:hover::before{
+    width: 100%;
+}
+ul#opciones li a:hover{
+    color: rgb(255, 255, 255);
+}
+/* ==== aplicando css al banner ==== */
+#benner{
+    position: relative;
+}
+#subtituloBanner{
+    position: absolute;
+    top: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ==== aplicando css a precentacionForm ==== */
+#precentacionForm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+#precentacionForm h2{
+    text-align: center;
+    color: #1F3F92;
+    font-size: 50px;
+}
+#parrafoPF{
+    margin: auto;
+    width: 50%;
+} 
+#parrafoPF p{
+    font-size: 20px;
+}
+#precentacionForm img {
+    width: 25%;
+    margin: auto;
+}
+
+/* ==== aplicando css al form ==== */
+#form{
+    width: 55%;
+    margin: auto;
+}
+#tituloform{
+    display: flex;
+    justify-self: start;
+    width: 80%;  
+    margin-bottom: 30px;
+}
+#tituloform img{
+    width: 59px;
+    margin-right: 10px;
+}
+#tituloform h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 18px;
+    padding-top: 22px;
+    color: #1F3F92;
+}
+#tituloform span {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 18px;
+    padding-top: 22px; 
+}
+.form{
+    background-color: #DEDEE6;
+    padding: 30px;
+    border-radius: 10px;
+}
+.form form{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 30px 50px;  
+}
+.inputs{
+    height: 50px;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.titulosForm{
+    margin: 30px;
+    font-size: 30px;
+    color: #62656C;
+    text-transform: uppercase;
+}
+#enviar {
+    margin-left: 50%;
+    margin-top: 5%;
+}
+#enviar form input{
+    background-color: #1F3F92;
+    padding: 15px 30px;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 2s
+}
+#enviar form input:hover{
+    background-color: #DEDEE6;
+    color: rgb(81, 157, 160);
+}
+
+/* ==== aplicando css al footer ==== */
+footer {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: auto;
+}
+footer div {
+    margin: 10px;
+}
+#colorFooter{
+    background-color: #1f4092d7;
+    border-top: 2px solid black;
+    margin-top: 130px;
+}
+/* == redes footer == */
+#redesFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+#redesFooter a img {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+}
+/* == medio footer == */
+#medioFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    width: 70%;
+}
+/* === contactos footer === */
+
+#contactosFooter  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#contactosFooter {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+#contactosFooter  ul li{
+    margin: 5px;
+}
+#contactosFooter  ul li a {
+    color: white;
+}
