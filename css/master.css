@@ -7,7 +7,6 @@
 }
 html{
     font-family: 'Poppins', sans-serif;
-    background-color: white;
 }
 img{
     width: 100%;
@@ -18,128 +17,96 @@ ul{
 a{
     text-decoration: none;
 }
-
 /*=== Aplicando CSS al encabezado===*/
-#logo{
-    width: 40%;
-    margin: auto;
-    padding-top: 10px;
-}
-#menu{
-    text-align: center;
-}
 #encabezado {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        background-color: #1F3F92;
-}
-#menu{
-    display: flex;   
-    justify-content: end;
-    align-items: end;
-}
-#nav {
+    background-color: #1F3F92;
     display: flex;
-    width: 90%;
-    margin-top: 4.5rem;
-    margin-right: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+#logo {
+    width: 50%;
 }
 #opciones {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-ul#opciones li a{   
-    color: black;
-    position: relative;
-}
-ul#opciones li a::before{
-    content: '';
-    width: 0%;
-    background-color: rgb(255, 255, 255);
-    height: 4px;
-    position: absolute;
-    bottom: -5px;
-    transition: all 0.9s;
-}
-ul#opciones li a:hover::before{
-    width: 100%;
-}
-ul#opciones li a:hover{
-    color: rgb(255, 255, 255);
+   text-align: center; 
 }
 
-/* ==== aplicando css al banner ===== */
-#banner img {
-    height: 78vh;
+#opciones li a{
+    color: white;
+    font-size: 20px;
+    padding: 1px 10px;
+    border-radius: 50px;
+    margin: 4px 0px; 
+}
+
+/* ==== aplicando css a boton up==== */
+#botonUp {
+    background-color: #1F3F92;
+    border-radius: 100px;
+    width: 50px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    left: 5px;
 }
 
 /* ==== aplicando css a PropuestaEdu==== */
 #propuestaEdu {
-    display: flex;
-    align-items: center;
     width: 80vw;
     margin: auto;
-    position: relative;
-    top: -60px;
-    z-index: 20;
 }
 .tituloPropuestaEdu {
     text-align: center;
-    
+    color: black;
     padding: 20px 10px;
 }
 .parrafoPropuestaEdu {
     text-align: center;
-    
+    color: black;
 }
 .secPropuestaEdu {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 20px;
-    background-color:rgb(0, 152, 157);
-    padding-bottom: 20px;
-    transition:  transform 1s;
-}
-.secPropuestaEdu:hover {
-    transform: translate(0px,-40px);
-}
-.secPropuestaEdu a{
-    color: black;
+    background-color: #3b5caf;
 }
 #form {
     background-color: green;
-    width: 30%;
-    padding: 5px 10px;
+    width: 60%;
+    padding: 1px 3px;
     margin: auto;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     border-radius: 30px;
-    transition: all 1s;
-}
-#form:hover{
-    background-color:#1F3F92;
 }
 #form a {
     color: black;
     text-align: center;
 }
+
 /* ==== aplicando css a quienes somos ==== */
 #imgQuienesSomos img{
     filter: blur(2px);
+    
+}
+#imgQuienesSomos{
+    position: relative;
 }
 #fraseBanner {
-    position: relative;
-    bottom: 500px;
+    position: absolute;
+    bottom: 85%;
     background-color: #1f4092c8;
     text-align: center;
+    width: 100%;
 }
 #parrafoQuienesSomos {
-    position: relative;
-    bottom: 400px;
-    background-color: #1f4092c8;
-    text-align: center;
+    background-color: #DEDEE6;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* ==== aplicando css a por que elegirnos ==== */
@@ -148,21 +115,22 @@ ul#opciones li a:hover{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 20px;
 }
 #porQueElegirnos h2{
-    background-color: #1F3F92;
+    background-color: #3b5caf;
     padding: 10px 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 #porQueElegirnos section{
     display: flex;
+    flex-direction: column;
     width: 90%;
-    background-color: #8d909f;
+    background-color: #DEDEE6;
     border-radius: 20px;
     padding: 10px;
-    margin-bottom: 130px;
+    margin-bottom: 35px;
 }
 #imgPorQueElegirnos{
     margin: 20px;
@@ -175,12 +143,8 @@ ul#opciones li a:hover{
 /* ==== aplicando css a ultimas noticias ==== */
 #todoUltimasNoticias {
     background-color: #DEDEE6;
-    padding-bottom: 30px;
-}
-#ultimasNoticias {
-    display: flex;
-    width: 70vw;
-    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .sectionUltimasNoticias {
     margin: 15px;
@@ -188,14 +152,13 @@ ul#opciones li a:hover{
     padding: 20px 20px;
     border-radius: 10px;
 }
-.tituloUltimasNoticias h3 {
+.tituloUltimasNoticias {
     color: #1F3F92;
-    font-size: large;
 }
 #tituloUltNot {
     color: #1F3F92;
-    font-size: 40px;
     text-align: center;
+    font-size: 30px;
 }
 .parrafoUltimasNoticias{
     color: black;
@@ -204,40 +167,39 @@ ul#opciones li a:hover{
 /* ==== aplicando css al footer ==== */
 footer {
     display: flex;
-    justify-content: center;
-    width: 90vw;
-    margin: auto;
-}
-footer div {
-    margin: 10px;
+    flex-direction: column;
 }
 #colorFooter{
     background-color: #1f4092d7;
     border-top: 2px solid black;
-    margin-top: 130px;
 }
-/* == redes footer == */
 #redesFooter {
     display: flex;
-    align-items: center;
     flex-direction: column;
     align-self: center;
+    text-align: center;
+    
+}
+#redesFooter h6 {
+    font-size: 20px;
+}
+#redesFooter ul {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    gap: 30px;
 }
 #redesFooter a img {
     width: 40px;
     height: 40px;
     margin: 3px;
 }
-/* == medio footer == */
-#medioFooter{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-self: center;
-    width: 70%;
+#medioFooter iframe {
+   display: none;
 }
-/* === contactos footer === */
-
+#medioFooter{
+    text-align: center;
+}
 #contactosFooter  ul{
     display: flex;
     flex-direction: column;
@@ -248,10 +210,224 @@ footer div {
     display: flex;
     justify-content: center;
     align-self: center;
+    
 }
 #contactosFooter  ul li{
     margin: 5px;
 }
 #contactosFooter  ul li a {
     color: white;
+}
+#contactosFooter  ul li h6 {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    /*=== Aplicando CSS al encabezado===*/
+    #opciones{
+        display: flex;
+        justify-content: space-around;
+    }   
+    /* ==== aplicando css a boton up==== */
+    #botonUp{
+        background-color: #1F3F92;
+        border-radius: 100px;
+        width: 100px;
+        position: fixed;
+        z-index: 1000;
+        bottom: 20px;
+        
+    }
+    /* ==== aplicando css a quienes somos ==== */
+    #parrafoQuienesSomos {
+        position: absolute;
+        background-color: #1f4092c8;
+        bottom: 15%;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    #medioFooter iframe{
+        display: block;
+    }
+    #medioFooter{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        width: 70%;
+    }
+    /* ==== aplicando css a por que elegirnos ==== */
+    #porQueElegirnos h2 {
+        font-size: 30px;
+    }
+    #imgPorQueElegirnos{
+        width: 60%;
+        margin: auto;
+    }
+    #parrafoPorQueElegirnos{
+        font-size: 20px;
+    }
+    /* ==== aplicando css a ultimas noticias ==== */
+    .sectionUltimasNoticias{
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .tituloUltimasNoticias{
+        font-size: 30px;
+    }
+    .parrafoUltimasNoticias{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    #encabezado {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        background-color: #1f4092;
+        padding: 0px;
+    }
+    #logo{
+        width: 70%;
+        margin: auto;
+    }
+    #menu{
+        display: flex;   
+        justify-content: end;
+        align-items: end;
+    }
+    #nav {
+        display: flex;
+        width: 100%;
+        margin-top: 4.5rem;
+        margin-right: 2rem;
+    }
+    #opciones {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    ul#opciones li a{   
+        color: black;
+        position: relative;
+        font-size: 30px;
+        padding: 0px;
+    }
+    ul#opciones li a::before{
+        content: '';
+        width: 0%;
+        background-color: rgb(255, 255, 255);
+        height: 4px;
+        position: absolute;
+        bottom: -5px;
+        transition: all 0.9s;
+    }
+    ul#opciones li a:hover::before{
+        width: 100%;
+    }
+    ul#opciones li a:hover{
+        color: rgb(255, 255, 255);
+    }
+    /* ==== aplicando css al banner ===== */
+    #banner img {
+        height: 78vh;
+    }
+    /* ==== aplicando css a PropuestaEdu==== */
+    #propuestaEdu {
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        margin: auto;
+        position: relative;
+        top: -90px;
+        z-index: 20;
+    }
+    .secPropuestaEdu{
+        padding-bottom: 20px;
+        transition:  transform 1s; 
+    }
+    .secPropuestaEdu:hover {
+        transform: translate(0px,-40px);
+    }
+    .tituloPropuestaEdu{
+        font-size: 25px;
+    }
+    .parrafoPropuestaEdu{
+        font-size: 20px;
+    }
+    #form {
+        background-color: green;
+        width: 30%;
+        padding: 5px 10px;
+        margin: auto;
+        margin-bottom: 35px;
+        border-radius: 30px;
+        font-size: 25px;
+        transition: all 1s;
+    }
+    #form:hover{
+        background-color:#1F3F92;
+    }
+    /* ==== aplicando css a quienes somos ==== */
+    #fraseBanner{
+        font-size: 2.5rem;
+        bottom: 75%;
+    }
+    #parrafoQuienesSomos p {
+        font-size: 1.5rem;
+        width: 70%;
+        margin: auto;
+        bottom: 60%;
+    }
+    /* ==== aplicando css a por que elegirnos ==== */
+    #porQueElegirnos section{
+        flex-direction: row;
+    }
+    #parrafoPorQueElegirnos{
+        font-size: 20px;
+    }
+    /* ==== aplicando css a ultimas noticias ==== */
+    #ultimasNoticias {
+        display: flex;
+        width: 70vw;
+        margin: auto;
+    }
+    .tituloUltimasNoticias{
+        font-size: 1.6rem;
+    }
+    #tituloUltNot{
+        font-size: 3rem;
+    }
+    .parrafoUltimasNoticias{
+        font-size: 1.3rem;
+    }
+    .sectionUltimasNoticias{
+        margin: 15px;
+        background-color: white;
+        padding: 20px 20px;
+        border-radius: 10px
+    }
+    
+    /* ==== aplicando css al footer ==== */
+    footer{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #redesFooter ul{
+        flex-direction: column;
+        gap: 0px;
+    }
+    #redesFooter a img{
+        width: 45px;
+        height: 45px;
+    }
+    #contactosFooter  ul li a {
+        font-size: 20px;
+    }
+    #colorFooter{
+        padding-bottom: 20px;
+    }
 }
